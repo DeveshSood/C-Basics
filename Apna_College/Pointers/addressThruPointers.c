@@ -2,11 +2,13 @@
 void address(int *n);
 
 void address(int *n) {
-    printf("%p",&(*n));
+    printf("Address address = %u",n);
 }
 
 void main() {
+    system("CLS");
     int n = 82;
-    printf("%p\n", &n);
+
     address(&n);
+    printf("\nMain Address = %u", &n);
 }
